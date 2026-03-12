@@ -29,9 +29,12 @@
 │     บอร์ดที่ 1     │     ───────────► │    บอร์ดที่ 2      │  
 │  (cane Board)   │                   │  (wrist Board)  │  
 └─────────────────┘                   └─────────────────┘  
-       │                                  │  
+       │  เชื่อม wifi                       │  เชื่อม wifi  
        ▼                                  ▼  
-
+     led, buzzer  ->   ควมคุมผ่าน          gps  
+       │  ล้ม,มืด       dashboard           │  ส่ง latitude,longtitude,satellite
+       ▼                                  ▼  
+ buzzer ดัง(ล้ม),led ติด(มืด)             broker  
 
 
 โครงสร้างไฟล์  
@@ -92,17 +95,16 @@ Hardware ที่ใช้:
 การติดตั้งและใช้งาน
 
 ความต้องการเบื้องต้น:
-- Arduino IDE (พร้อมติดตั้งบอร์ด ESP32)
-- บัญชี LINE Notify (สำหรับรับแจ้งเตือน)
-- MQTT Broker (เช่น MQTTx)
-- Node-RED (สำหรับ Dashboard)
+- golang (สำหรับระบบหลังบ้าน)
+- Javascript runtime (สำหรับ Next.js Dashboard)
+- Arduino IDE (สำหรับติดตั้ง firmware ลงใน microcontroller)
 
 ขั้นตอนการติดตั้ง:
 
-1. ติดตั้งไลบรารีที่จำเป็นใน Arduino IDE
-   - MPU6050 by Jeff Rowberg
+1. ติดตั้ง library / board manager ที่จำเป็นใน Arduino IDE
+   - ติดตั้ง board manager รุ่นที่ต้องการ (เช่น esp32s3)
    - PubSubClient (สำหรับ MQTT)
-   - Adafruit SSD1306 (สำหรับ OLED)
+   - TinyGPS++
    - WiFiClient
 
 2. ตั้งค่า WiFi และ MQTT
