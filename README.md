@@ -22,8 +22,7 @@
 
 
 
-แผนผังการทำงาน<br>
-
+<h2>แผนผังการทำงาน</h2><br>
 ![Flow](https://github.com/varakornpz/Incanedible-summary/blob/main/assets/flow.png)
 
 <h2>โครงสร้างไฟล์</h2>
@@ -31,13 +30,13 @@
 ริสแบนด์<br>
 firmware\wristband
 
-ไม้เท้า<br>  
+ไม้เท้า<br>
 firmware\cane
 
-แดชบอร์ด (github repo แยก)<br>  
+แดชบอร์ด (github repo แยก)<br>
 [Dashboard Repo](https://github.com/varakornpz/Incanedible-frontend)
 
-หลังบ้าน (github repo แยก)<br>  
+หลังบ้าน (github repo แยก)<br>
 [ฺBackend Repo](https://github.com/varakornpz/clickything-backend)
 
 
