@@ -14,7 +14,7 @@
 โดยมีอุปกรณ์ที่ใช้ ได้แก่
 -  Buzzer 1 ชิ้น
 -  LED 5 ชิ้น
--  หน้าเว็บ Dashboard (Node-RED)
+-  หน้าเว็บ Dashboard (Next.js)
 -  GPS 1 ชิ้น
 -  LDR 1 ชิ้น
 -  esp32s3 dev module 2 ชิ้น
@@ -34,7 +34,7 @@
      led, buzzer  ->   ควมคุมผ่าน          gps  
        │  ล้ม,มืด       dashboard           │  ส่ง latitude,longtitude,satellite  
        ▼                                  ▼  
- buzzer ดัง(ล้ม),led ติด(มืด)             broker  
+ buzzer ดัง(ล้ม),led ติด(มืด)              broker  
 
 
 โครงสร้างไฟล์  
@@ -63,25 +63,23 @@ fall-detection-system-Axis32/
 
 Hardware ที่ใช้:
 - ESP32S3
-- MPU6050 (เชื่อมต่อผ่าน I2C)
+- LED
 - Buzzer
-- Switch
+- relay
+- ldr
 
 
 2. newOLEDlicensed.ino (บอร์ดที่ 2)
 -----------------------------------------------------------
 หน้าที่หลัก:
-- รับข้อความจาก MQTT ที่ส่งมาจากบอร์ดที่ 1
-- แสดงสถานะและข้อความเตือนบนหน้าจอ OLED
-- แสดงเวลาที่เกิดเหตุการณ์
-- แจ้งเตือนเสียง Buzzer
-- แจ้งเตือนแสง LED
+- gps รับข้อมูลตำแหน่งจาก satellite 
+- esp32s3 นำข้อมูลที่ได้จาก gps ส่งไปที่ mqtt แล้วส่งไปที่ golang แล้วก็ส่งไปที่ Next.js ซึ่งเป็น dashboard
+
 
 Hardware ที่ใช้:
 - ESP32 (หรือบอร์ดที่รองรับ WiFi)
-- หน้าจอ OLED (SSD1306, I2C)
-- Buzzer
-- LED
+- Gy-neo 6m
+
 
 
 แบบผังวงจร (Schematics)
@@ -106,11 +104,11 @@ Hardware ที่ใช้:
    - PubSubClient (สำหรับ MQTT)
    - TinyGPS++
    - WiFiClient
+   - 
 
 2. ตั้งค่า WiFi และ MQTT
    - แก้ไข SSID, Password ในไฟล์ .ino ทั้งสอง
    - ตั้งค่า MQTT Broker และ Topic ให้ตรงกัน
-   - ตัวอย่าง MQTT Topic: "fall_detection/status"
 
 3. ตั้งค่า LINE Notify
    - ขอ Line Token จาก https://notify-bot.line.me
@@ -120,7 +118,7 @@ Hardware ที่ใช้:
    - อัปโหลด mpu6050linenotifylicensed.ino ไปยังบอร์ดที่ 1
    - อัปโหลด newOLEDlicensed.ino ไปยังบอร์ดที่ 2
 
-5. ตั้งค่า Node-RED (ถ้าต้องการ)
+5. ตั้งค่า Next.js (ถ้าต้องการ)
    - รับ MQTT และสร้าง Dashboard สำหรับแสดงสถานะ
 
 
