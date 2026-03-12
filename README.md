@@ -22,20 +22,10 @@
 
 
 
-ระบบการทำงาน
-ระบบประกอบด้วยบอร์ดหลัก 2 บอร์ด:
+แผนผังการทำงาน
 
-___________________                   ___________________  
-│     บอร์ดที่ 1     │     ───────────► │    บอร์ดที่ 2      │  
-│  (cane Board)   │                  |  (wrist Board)   │  
-└─────────────────┘                  ___________________ 
-       │  เชื่อม wifi                       │  เชื่อม wifi  
-       ▼                                  ▼  
-     led, buzzer  ->   ควมคุมผ่าน          gps  
-       │  ล้ม,มืด       dashboard           │  ส่ง latitude,longtitude,satellite  
-       ▼                                  ▼  
- buzzer ดัง(ล้ม),led ติด(มืด)              broker  
 
+![Flow](https://github.com/varakornpz/Incanedible-summary/blob/main/assets/flow.png)
 
 โครงสร้างไฟล์  
 fall-detection-system-Axis32/  
