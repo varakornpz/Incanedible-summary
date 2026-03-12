@@ -29,7 +29,7 @@
 
 ## แผนผังการทำงาน  
 
-![Flow](https://github.com/varakornpz/Incanedible-summary/blob/main/assets/flow.png)
+![Flow](https://github.com/varakornpz/Incanedible-summary/blob/main/assets/system_flow.png)
 
 
 ### Wristband
@@ -67,14 +67,14 @@ Dashboard (another github repo)
 [Dashboard Repo](https://github.com/varakornpz/Incanedible-frontend)
 
 Backend (another github repo)  
-[Backend Repo](https://github.com/varakornpz/clickything-backend)
+[Backend Repo](https://github.com/varakornpz/Incanedible-backend)
 
 ## Diagram
 
 ### Cane
-![Cane diagram](https://github.com/varakornpz/Incanedible-summary/blob/main/assets/flow.png)
+![Cane diagram](https://github.com/varakornpz/Incanedible-summary/blob/main/assets/cane_diagram.png)
 
 ### Wristband
-![Wristband diagram](https://github.com/varakornpz/Incanedible-summary/blob/main/assets/flow.png)
+![Wristband diagram](https://github.com/varakornpz/Incanedible-summary/blob/main/assets/wristband_diagram.jpg)
 
 
