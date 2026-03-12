@@ -32,7 +32,7 @@
        │  เชื่อม wifi                       │  เชื่อม wifi  
        ▼                                  ▼  
      led, buzzer  ->   ควมคุมผ่าน          gps  
-       │  ล้ม,มืด       dashboard           │  ส่ง latitude,longtitude,satellite
+       │  ล้ม,มืด       dashboard           │  ส่ง latitude,longtitude,satellite  
        ▼                                  ▼  
  buzzer ดัง(ล้ม),led ติด(มืด)             broker  
 
