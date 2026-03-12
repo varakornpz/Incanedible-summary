@@ -1,6 +1,6 @@
 # incanedible
-
-ผู้จัดทำ
+ 
+<h1>ผู้จัดทำ</h1>
 ทีม 4ตัวบาท 3โลร้อย
 ภาควิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์
 รายชื่อสมาชิก :  
@@ -27,17 +27,20 @@
 
 ![Flow](https://github.com/varakornpz/Incanedible-summary/blob/main/assets/flow.png)
 
-โครงสร้างไฟล์  
-fall-detection-system-Axis32/  
-│  
-├── newOLEDlicensed.ino                 # โค้ดสำหรับบอร์ดที่ 2 (แสดงผล OLED และการแจ้งเตือน)  
-├── mpu6050linenotifylicensed.ino       # โค้ดสำหรับบอร์ดที่ 1 (เซนเซอร์และการแจ้งเตือน)  
-├── LICENSE                             # สัญญาอนุญาต GNU GPLv3  
-├── README.txt                          # เอกสารนี้  
-│  
-├── schematics/  
-│   ├── Board 1 schematics.pdf          # ผังวงจรบอร์ดที่ 1 (ออกแบบผ่านโปรแกรม EasyEDA)  
-│   └── Board 2 schematics.pdf          # ผังวงจรบอร์ดที่ 2 (ออกแบบผ่านโปรแกรม EasyEDA)  
+โครงสร้างไฟล์
+
+ริสแบนด์
+firmware\wristband
+
+ไม้เท้า
+firmware\cane
+
+แดชบอร์ด (github repo แยก)
+[Dashboard Repo](https://github.com/varakornpz/Incanedible-frontend)
+
+หลังบ้าน (github repo แยก)
+[ฺBackend Repo](https://github.com/varakornpz/clickything-backend)
+
 
 
 รายละเอียดไฟล์ซอร์สโค้ด  
@@ -110,27 +113,3 @@ Hardware ที่ใช้:
 
 5. ตั้งค่า Next.js (ถ้าต้องการ)
    - รับ MQTT และสร้าง Dashboard สำหรับแสดงสถานะ
-
-
-สัญญาอนุญาต
------------------------------------------------------------
-โปรเจคนี้อยู่ภายใต้สัญญาอนุญาต GNU General Public License v3.0
-
-Project: Fall Detection and Emergency Alert System
-Copyright 2024 Axis32 Team - Computer Engineering, Kasetsart University
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-ดูรายละเอียดเพิ่มเติมได้ที่ไฟล์ LICENSE
------------------------------------------------------------
-
-ถ้าคุณพบว่าโปรเจคนี้มีประโยชน์ สามารถแชร์หรือนำไปพัฒนาต่อได้ 
-ตามข้อกำหนดของสัญญาอนุญาต GPLv3
