@@ -29,16 +29,16 @@
 
 โครงสร้างไฟล์
 
-ริสแบนด์
+ริสแบนด์  
 firmware\wristband
 
-ไม้เท้า
+ไม้เท้า  
 firmware\cane
 
-แดชบอร์ด (github repo แยก)
+แดชบอร์ด (github repo แยก)  
 [Dashboard Repo](https://github.com/varakornpz/Incanedible-frontend)
 
-หลังบ้าน (github repo แยก)
+หลังบ้าน (github repo แยก)  
 [ฺBackend Repo](https://github.com/varakornpz/clickything-backend)
 
 
