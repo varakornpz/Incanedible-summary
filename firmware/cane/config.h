@@ -11,7 +11,7 @@
 //Board pin
 #define SDA 8
 #define SCL 9
-#define LED 1
+#define LED 41
 #define BUZZER  45
 #define LDR 15
 
